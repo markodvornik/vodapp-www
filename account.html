@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aplikacija Pitna voda</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="voda,vodni sistem,vodovod,vodovodno,vodni,vodovodni,omrežje, motnje, motena oskrba, prekinitev, prekinjena oskrba, preklic ukrepa, uveljavitev ukrepa, prekuhavanje, Slovenija, slovenska,potisno obveščanje,opozarjanje,opozorila,alarm,push notifications,alert,alerting"
+    />
+    <meta name="description" content="Uporabniški račun" />
+
+    <!-- STYLESHEET CSS FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <meta name="apple-itunes-app" content="app-id=1150914088" />
+
+    <meta property="fb:app_id" content="608020259380032" />
+    <meta property="fb:admins" content="673287877" />
+    <meta property="og:locale" content="sl_SI" />
+    <meta property="og:title" content="Pitna voda" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vodapp.si/" />
+    <meta
+      property="og:image"
+      content="https://www.vodapp.si/images/og_image.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Spremljajte stanje oskrbe in kakovosti pitne vode z mobilno aplikacijo."
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+  </head>
+
+  <body id="account">
+    <!-- contact section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="section-title">
+              <h1>
+                <a href="/" title="Pitna voda"
+                  ><img src="/images/icon.svg" alt="Pitna voda" class="logo"
+                /></a>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="section-title">
+              <div class="alert alert-info" role="alert" id="alert"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="lite">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="section-title">
+              <p>
+                <a
+                  href="mailto:info@vodapp.si"
+                  class="inline"
+                  title="Pišite nam"
+                  >info@vodapp.si</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              © Pitna voda - aplikcija za pametne mobilnike za spremljanje
+              stanja oskrbe s pitno vodo in kakovosti pitne vode.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const currentUrl = new URL(window.location.toLocaleString()).searchParams;
+    const msgParam = currentUrl.get("msg");
+    const msg = {
+      deleted: "Vaš uporabniški račun je bil uspešno izbrisan.",
+    };
+    document.getElementById("alert").innerHTML = msg[msgParam];
+  </script>
+</html>

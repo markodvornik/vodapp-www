@@ -453,6 +453,10 @@ home section
   background: #aac1bf;
   border-color: transparent;
 }
+.logo {
+  width: 120px;
+  height: 120px;
+}
 #home .logo,
 #home .splash {
   display: block;
@@ -682,7 +686,8 @@ footer {
   padding-top: 200px;
   padding-bottom: 60px;
 }
-footer a, footer a:hover {
+footer a,
+footer a:hover {
   color: #ffffff;
 }
 footer p {
@@ -690,6 +695,18 @@ footer p {
 }
 footer p {
   padding-top: 20px;
+}
+footer.lite {
+  background-color: #f9f9f9;
+  padding: 20px;
+  flex: 1;
+  align-items: flex-end;
+  display: flex;
+}
+footer.lite p {
+  color: #009988;
+  text-align: center;
+  font-size: 12px;
 }
 .social-icon {
   padding: 0;
@@ -853,16 +870,16 @@ help
   color: #fff;
 }
 #about .legal li {
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 28px;
-    margin: 0.2em 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 28px;
+  margin: 0.2em 0;
 }
 #about .legal h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 #about .legal h3 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 quote {
   padding: 1em 0;
@@ -890,6 +907,13 @@ quote {
 /* ==========================================================================
 ... branding
 ========================================================================== */
+#account {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 #press #navodila a {
   color: #fff;
 }
