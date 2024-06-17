@@ -18,7 +18,7 @@
 
     <!-- STYLESHEET CSS FILES -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <meta name="apple-itunes-app" content="app-id=1150914088" />
 
@@ -38,25 +38,26 @@
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100,400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- home div -->
-    <div id="home">
+    <div id="home" class="gradient">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <img src="/images/icon.svg" alt="Pitna voda" class="logo" />
-            <img
-              class="splash img-responsive"
-              src="images/app-img.png"
-              alt="Aplikacija"
-            />
-
             <h1 title="Aplikacija Pitna voda">Pitna voda</h1>
             <h2>Spremljajte stanje oskrbe in kakovost pitne vode</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row badges">
           <div class="col-md-12 col-sm-12">
             <a
               title="Pitna voda v App Store"
@@ -87,24 +88,24 @@
     <div id="feature">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="div-title">
-              <h2 class="lead">Aplikacija za pametne mobilnike</h2>
-              <hr />
-            </div>
-          </div>
           <div
-            class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp"
+            class="col-lg-offset-3 col-mf-offset-6 col-sm-offset-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp"
             data-wow-delay="0.6s"
           >
             <div class="col-md-12 col-sm-12">
-              <i class="icon medium-icon icon-beaker"></i>
-              <h3>NAMESTI IN POZABI</h3>
+              <div class="div-title">
+                <h2 class="lead">Aplikacija za mobilnike</h2>
+                <hr />
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <i class="icon medium-icon icon-paper-plane"></i>
+              <h3>PREJEMANJE OBVESTIL</h3>
               <hr />
               <p>
-                Naj aplikacija namesto vas skrbno in zanesljivo spremlja novosti
-                pri oskrbi s pitno vodo in vas opozori, takoj ko nastane
-                sprememba.
+                Prejemajte obvestila o spremembah stanja kakovosti in oskrbe s
+                pitno vode. Obvestila lahko prejemate za več različnih lokacij,
+                kot je dom, služba, vikend ...
               </p>
             </div>
             <div class="col-md-12 col-sm-12">
@@ -112,43 +113,10 @@
               <h3>ENOSTAVNA UPORABA</h3>
               <hr />
               <p>
-                Aplikacija vam pomaga določiti pravilen vodni sistem za vaše
-                odjemno mesto.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.9s"
-          >
-            <img
-              src="images/features-img.png"
-              class="img-responsive"
-              alt="features img"
-            />
-          </div>
-          <div
-            class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="1s"
-          >
-            <div class="col-md-12 col-sm-12">
-              <i class="icon medium-icon icon-paper-plane"></i>
-              <h3>PREJEMANJE OBVESTIL</h3>
-              <hr />
-              <p>
-                Prejemajte opozorila tudi ko je zaslon mobilnika ugasnjen.
-                Spremljate stanje pitne vode za vaš dom, zidanico, šolo, delovno
-                mesto ali najljubši lokal.
-              </p>
-            </div>
-            <div class="col-md-12 col-sm-12">
-              <i class="icon medium-icon icon-heart"></i>
-              <h3>VEDNO Z VAMI</h3>
-              <hr />
-              <p>
-                Dve tretjini prebivalstva že ima pametne naprave vedno ob sebi,
-                zato so idealen medij za sporočanje pomembnih informacij, kot je
-                stanje pitne vode.
+                Obvestila prejemate glede na vodni sistema lokacije, v katerem
+                se nahajate. Ustrezen vodni sistem vam aplikacija pomaga
+                določiti tako, da vpišete vaš naslov ali pa se uporabi vaš
+                trenuten položaj.
               </p>
             </div>
           </div>
@@ -216,7 +184,7 @@
       </div>
     </div>
 
-    <!-- pricing div -->
+    <!-- navodila div -->
     <div id="navodila" class="navodila">
       <div class="container">
         <div class="row">
@@ -231,127 +199,161 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-sm-12 text-center">
-            <div class="div-title">
-              <h1 class="heading bold">1. ZAČETNI KORAKI</h1>
-              <hr />
-            </div>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-11.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-blue">
-              <p>
-                Ob prvem zagonu vas aplikacija vpraša za dovoljenje za
-                pošiljanje obvestil. Prosimo, da to potrdite ("Allow").
-              </p>
-              <p>
-                Svojo odločitev lahko kasneje spremenite v nastavitva vaše
-                mobilne naprave.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-12.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-blue-2">
-              <p>
-                Nadaljujte na obrazec za registracijo. Vpišite naslov e-pošte in
-                si določite geslo (v obrazec ga morate vpisati 2-krat).
-              </p>
-              <p>Potrdite obrazec in počakajte nekaj trenutkov.</p>
-            </div>
+            <figure class="anim">
+              <img
+                class="img-responsive"
+                src="images/screenshot/00-prijava.png"
+                alt=""
+              />
+              <img
+                class="img-responsive"
+                src="images/screenshot/01-pin-poslan.png"
+                alt=""
+              />
+              <img
+                class="img-responsive"
+                src="images/screenshot/02-pin-vpis.png"
+                alt=""
+              />
+              <figcaption class="plan plan-one bg-blue-2">
+                <h4>Prijava</h4>
+                <p><strong>Vpišite svoj e-poštni naslov</strong>.</p>
+                <p>Izberite gumb »Nadaljuj«.</p>
+                <p>Prejeli boste e-pošto z geslom.</p>
+                <p><strong>Vpišite enkratno geslo</strong>,</p>
+                <p>ki ste ga prejeli po e-pošti in potrdite.</p>
+              </figcaption>
+            </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-13.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-blue-3">
-              <p>
-                Na vpisani e-naslov boste prejeli sporočilo. Prosimo, da
-                prejetje tega sporočila čim prej tudi potrdite (kliknite na
-                povezavo v prejeti e-pošti).
-              </p>
-            </div>
+            <figure class="anim">
+              <img
+                class="img-responsive pravice"
+                src="images/screenshot/00-pravice.png"
+                alt=""
+              />
+              <img
+                class="img-responsive"
+                src="images/screenshot/11-intro.png"
+                alt=""
+              />
+              <img
+                class="img-responsive"
+                src="images/screenshot/10-autoconfig.png"
+                alt=""
+              />
+              <figcaption class="plan plan-one bg-blue">
+                <h4>Pravice</h4>
+                <p>
+                  Ob prvem zagonu dovolite
+                  <strong>prepoznavanje vaše lokacije</strong>.
+                </p>
+                <p>
+                  Obveščanje se bo samodejno nastavilo glede na vašo lokacijo.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <figure class="anim">
+              <img
+                class="img-responsive domov"
+                src="images/screenshot/40-domov.png"
+                alt=""
+              />
+              <img
+                class="img-responsive"
+                src="images/screenshot/20-dodaj.png"
+                alt=""
+              />
+              <img
+                class="img-responsive domov"
+                src="images/screenshot/40-domov.png"
+                alt=""
+              />
+              <figcaption class="plan plan-one bg-blue-3">
+                <h4>Dodajanje obveščanja</h4>
+                <p>
+                  Za dodajanje novih območij obveščanja
+                  <strong>izberite gumb (+)</strong> desno na dnu zaslona.
+                </p>
+                <p>
+                  Nato izberite enega od treh načinov, ki vam najbolj ustreza.
+                </p>
+                <p>(Glej nadaljevanje.)</p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-sm-12 text-center">
-            <div class="div-title">
-              <h1 class="heading bold">2. VAŠE ODJEMNO MESTO</h1>
-              <hr />
-            </div>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-21.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-green">
-              <p>
-                Novo odjemno mesto dodate tako, da kliknete na zeleni gumb (+)
-                levo zgoraj.
-              </p>
-            </div>
+            <figure>
+              <img
+                class="img-responsive domov"
+                src="images/screenshot/21-geo-lokacija.png"
+                alt=""
+              />
+              <figcaption class="plan plan-one bg-blue-3">
+                <h4>1. Samodejno dodajanje</h4>
+                <p>
+                  Izberite prvi način dodajanja
+                  <strong>Samodejno (vaša trenutna lokacija)</strong>.
+                </p>
+                <p>
+                  V kolikor bo iskanje vaše lokacije uspelo, se bo pojavil zelen
+                  okvirček, v katerem izberite gumb
+                  <br /><strong>+ Dodaj obveščanje</strong>.
+                </p>
+              </figcaption>
+            </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-22.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-green-2">
-              <p>
-                Izberite enega od treh načinov vnosa: <br />
-                SAMODEJNO, <br />
-                VPIS NASLOVA, <br />
-                ali IZBIRA S SEZNAMA.
-              </p>
-            </div>
+            <figure>
+              <img
+                class="img-responsive domov"
+                src="images/screenshot/23-naslov.png"
+                alt=""
+              />
+              <figcaption class="plan plan-one bg-blue-3">
+                <h4>2. Hišni naslov</h4>
+                <p>
+                  Izberite drugi način dodajanja
+                  <strong>Z vpisom hišnega naslova</strong>.
+                </p>
+                <p>
+                  V obrazec vpišite hišni naslov, za katerega želite spremljati
+                  obvestila (vpišite tudi poštno številko in pošto).
+                </p>
+                <p>
+                  Po uspešnem iskanju izberite gumb <br /><strong
+                    >+ Dodaj obveščanje</strong
+                  >.
+                </p>
+              </figcaption>
+            </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-23.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-green-3">
-              <p>
-                Priporočamo prvi način, ki samodejno nastavi odjemno mesto glede
-                na vaš trenuten položaj.
-              </p>
-              <p>
-                Postopek lahko ponovite več krat, pri čemer pa priporočamo, da
-                uporabite način vpisa naslova.
-              </p>
-            </div>
+            <figure>
+              <img
+                class="img-responsive domov"
+                src="images/screenshot/24-seznam.png"
+                alt=""
+              />
+              <figcaption class="plan plan-one bg-blue-3">
+                <h4>3. Iz seznama</h4>
+                <p>
+                  Izberite tretji način dodajanja
+                  <strong>Z izbiro območja iz seznama</strong>.
+                </p>
+                <p>
+                  V seznamu obkljukajte območja, za katera želite prejemati
+                  obvestila.
+                </p>
+              </figcaption>
+            </figure>
           </div>
           <div class="col-xs-12">
             <p>
@@ -359,63 +361,6 @@
               obveščeni z zvočnim signalom in izpisom obvestila na zaslonu
               mobilne naprave.
             </p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 text-center">
-            <div class="div-title">
-              <h1 class="heading bold">3. DODATNE NASTAVITVE</h1>
-              <hr />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-31.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-amber">
-              <p>
-                Za urejanje nastavitev, se pomaknite na dno seznama vodnih
-                sistemov in izberite sivo ikono (kolesce).
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-32.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-amber-2">
-              <p>
-                Označite vodne sisteme, ki jih želite odstraniti in potrdite
-                izbor z rdečim gumbom.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <img
-              width="320"
-              height="320"
-              class="img-responsive"
-              src="images/navodila-33.png"
-              alt=""
-            />
-            <div class="plan plan-one bg-amber-3">
-              <p>
-                V nastavitvah lahko dostopate tudi do obrazca za spremembo gesla
-                in odjave iz vašega uporabniškega računa.
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -493,10 +438,10 @@
               </div>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px" aria-hidden="true">
-				<label for="mce-9755004c43b3c03a47c8424af_7d5fd89b84">*</label>
+                <label for="mce-9755004c43b3c03a47c8424af_7d5fd89b84">*</label>
                 <input
                   type="text"
-				  id="mce-9755004c43b3c03a47c8424af_7d5fd89b84"
+                  id="mce-9755004c43b3c03a47c8424af_7d5fd89b84"
                   name="b_9755004c43b3c03a47c8424af_7d5fd89b84"
                   tabindex="-1"
                   value=""
@@ -540,8 +485,8 @@
               Podprti so vsi pametni mobilniki Android in Apple stari dve leti
               ali novejši.
             </p>
-            <p>Android naprave morajo imeti nameščen sistem 4.0 ali novejši.</p>
-            <p>Apple naprave morajo imeti nameščen sistem 8.0 ali novejši.</p>
+            <p>Android naprave morajo imeti nameščen sistem 13 ali novejši.</p>
+            <p>Apple naprave morajo imeti nameščen sistem 15 ali novejši.</p>
             <p>
               Različico sistema lahko pogledate v nastavitvah naprave
               (Settings).
@@ -552,18 +497,16 @@
             <p>Aplikacija je na volj brezplačno. Neposrednih stroškov ni.</p>
             <p>
               Za delovanje potrebuje dostop do medmrežja, pri čemer lahko
-              nastanejo stroški (če se povezujete preko 3G ali 4G, preko WiFi
-              stroškov praviloma ni).
+              nastanejo stroški.
             </p>
 
             <h4>Aplikacije v trgovini ne najdem</h4>
             <p>
               Pri iskanju uporabite celoten niz "Pitna voda". Aplikacijo lahko
-              spoznate tudi po ikoni.
-            </p>
-            <p>
-              Posodobite sistem vašega mobilnika in preverite katero različico
-              imate (glej prvo vprašanje).
+              spoznate tudi po ikoni, ali pa na
+              <a href="https://apple.co/2dRATwT"
+                >telefonu kliknite na to povezavo</a
+              >.
             </p>
 
             <h3>Vsebinska vprašanja</h3>
@@ -609,12 +552,6 @@
               položaj, kjer je GPS sprejem boljši (na prosto) in malo počakate,
               da vaš mobilnik zazna signal (to lahko traja nekaj minut).
             </p>
-            <p>
-              Novejši mobilniki položaj določajo na podlagi internetne povezave
-              (WiFI) in glede na "spomin" (vaše preteklo gibanje). Lahko traja
-              nekaj časa, preden mobilnik osveži zgodovino vaše lokacije in v
-              tem času je določanje položaja manj natančno.
-            </p>
 
             <h4>Mislim, da prejemam napačna obvestila</h4>
             <p>
@@ -636,24 +573,10 @@
               omrežja, za katero pa ni vedno izdano opozorilo).
             </p>
             <p>
-              Priporočamo, da ponovno nastavite vodne sisteme. V redkih primerih
-              (za priključke, ki ležijo neposredno na meji dveh sistemov ali ko
-              prihaja do prelivanja vode iz enega sistema v drugega) aplikacija
-              samodejno ne določi pravilnega vodnega sistema. V tem primeru
-              priporočamo, da vodni sistem nastavite ročno in da določite
-              spremljanje obvestil za več vodnih sistemov (tudi tistih, ki so
-              vam sosednji).
-            </p>
-            <p>
               Če pogosto prihaja do razlik v stanju na vašem priključku in pri
-              opozorilih, svetujemo, da pišete na naš kontaktni naslov, ali pa
-              kontaktirate koncesionarja, ki upravlja vodovodno omrežje.
+              opozorilih, svetujemo, da kontaktirate koncesionarja, ki upravlja
+              vodovodno omrežje.
             </p>
-
-            <h4>
-              Aplikacija javi napako: "lokacija izven območja vodooskrbe".
-            </h4>
-            <p>Vaše področje še ni vključeno v sistem obveščanja.</p>
 
             <h4>Kdaj bo moja lokacija vključena v sistem obveščanja?</h4>
             <p>
@@ -686,19 +609,17 @@
         </div>
         <div class="row">
           <div class="col-md-offset-4 col-md-2 col-sm-12 text-center">
-            <a
-              href="https://bit.ly/2egnz2X"
-              target="_blank"
-              rel="nofolow"
-              ><img src="images/Badge-GooglePlay.png" alt="Pitna voda v Google Play"
+            <a href="https://bit.ly/2egnz2X" target="_blank" rel="nofolow"
+              ><img
+                src="images/Badge-GooglePlay.png"
+                alt="Pitna voda v Google Play"
             /></a>
           </div>
           <div class="col-md-2 col-sm-12 text-center">
-            <a
-              href="https://apple.co/2dRATwT"
-              target="_blank"
-              rel="nofolow"
-              ><img src="images/Badge-App_Store.svg" alt="Pitna voda v App Store"
+            <a href="https://apple.co/2dRATwT" target="_blank" rel="nofolow"
+              ><img
+                src="images/Badge-App_Store.svg"
+                alt="Pitna voda v App Store"
             /></a>
           </div>
         </div>
@@ -724,6 +645,19 @@
 
     <!-- footer div -->
     <footer>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 disclamer">
+          <p class="text-center text-muted">
+            <small>
+              <a
+                class="inline"
+                href="https://www.freepik.com/free-psd/white-smartphone-mock-up-lateral-view_1162360.htm#fromView=image_search_similar&page=1&position=0&uuid=269682d5-f805-48ec-8aa8-1cbade4b8bfa"
+                >foto: zlatko_plamenov on Freepik</a
+              >
+            </small>
+          </p>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12"></div>
@@ -736,7 +670,9 @@
             </p>
             <p>
               <a href="#navodila">Navodila za uporabo</a>
-              - <a href="about.html">Pravno obvestilo in Izjava o dostopnosti</a> -
+              -
+              <a href="about.html">Pravno obvestilo in Izjava o dostopnosti</a>
+              -
               <a href="press.html">Za medije (PRESS)</a>
             </p>
           </div>

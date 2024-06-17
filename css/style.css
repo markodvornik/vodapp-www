@@ -105,28 +105,33 @@ select,
 li,
 q,
 quote {
-  font-family: Thonburi, Roboto, Frutiger, "Frutiger Linotype", Univers, Calibri,
-    "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans",
-    "Nimbus Sans L", sans-serif;
   color: #001017;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 h2,
 h3,
 h5,
 h6 {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 6px;
 }
 h1 {
   font-weight: 100;
 }
 h2 {
-  font-size: 1.1em;
+  font-size: 2em;
   letter-spacing: 1px;
+  color: #0891b2;
+}
+h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+  color: #0891b2;
 }
 h4 {
-  font-weight: 700;
-  letter-spacing: 6px;
+  font-weight: 400;
 }
 h1.heading {
   font-size: 24px;
@@ -136,13 +141,16 @@ h1.heading {
   font-weight: 700;
   padding-bottom: 60px;
 }
+h2.lead {
+  font-size: 2em;
+}
 .bold {
   font-weight: 700;
 }
 p {
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 28px;
+  font-weight: 400;
+  line-height: 2em;
+  font-size: 1.35em;
 }
 a {
   outline: none !important;
@@ -158,20 +166,33 @@ strong {
   padding-top: 48px;
   padding-bottom: 0px;
 }
-#feature,
+
+.badges {
+  margin-top: 1em;
+}
+
+/* feature */
+#feature {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-image: url(../images/app-img-ORH8V51-1500.webp);
+  background-size: auto 70vb;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
 #team,
-#pricing,
+#navodila,
 #contact {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 #feature,
 #team,
-#pricing {
+#navodila {
   text-align: center;
 }
 #team {
-  background: #d4eae8;
+  background: #cffafe;
   color: #ffffff;
 }
 footer {
@@ -416,13 +437,21 @@ navigation section
   background-color: transparent;
 }
 
+.gradient {
+  background: #cffafe;
+  background-image: linear-gradient(
+    to right bottom,
+    #67e8f9,
+    #a5f3fc,
+    #cffafe,
+    #fef9c3
+  );
+}
+
 /* ==========================================================================
 home section
 ========================================================================== */
 #home {
-  background: #aac1bf;
-  background-size: cover;
-  background-position: center;
   color: #ffffff;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -492,12 +521,6 @@ team section
 #team .col-md-4 {
   padding: 10px;
 }
-#team h4 {
-  color: #15576b;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
 #team .team-wrapper .team-des {
   position: relative;
   cursor: pointer;
@@ -516,46 +539,47 @@ team section
 }
 
 /* ==========================================================================
-pricing section
+navodila section
 ========================================================================== */
-#pricing .plan {
+#navodila .plan {
   background: #b8f5ff;
   padding: 40px 0px 60px 0px;
   margin-bottom: 32px;
 }
-#pricing .plan .plan_title {
+#navodila .plan .plan_title {
   background: #f9f9f9;
   border-radius: 50%;
   width: 180px;
   height: 180px;
   margin: 0 auto;
 }
-#pricing h2 {
-  border-bottom: 1px solid #bbc1bf;
+#navodila h4 {
+  font-weight: 700;
+  color: #0891b2;
 }
-#pricing .plan h3 {
+#navodila .plan h3 {
   font-size: 16px;
   font-weight: 700;
   line-height: 180px;
 }
-#pricing .plan h2 {
+#navodila .plan h2 {
   font-weight: 700;
   padding: 30px;
 }
-#pricing .plan p {
+#navodila .plan p {
   margin: 0 1em;
 }
-#pricing .plan ul {
+#navodila .plan ul {
   padding: 0px;
 }
-#pricing .plan ul li {
+#navodila .plan ul li {
   display: block;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 2px;
   padding: 30px 0px 10px 0px;
 }
-#pricing .plan .btn {
+#navodila .plan .btn {
   background: #ffffff;
   border: none;
   border-radius: 0px;
@@ -567,7 +591,7 @@ pricing section
   margin-top: 20px;
   text-transform: uppercase;
 }
-#pricing .plan .btn:hover {
+#navodila .plan .btn:hover {
   background: #eeeeee;
 }
 
@@ -584,16 +608,123 @@ pricing section
   background: #bd0e01;
   text-decoration: none;
 }
-#pricing.navodila img {
-  max-width: 100%;
+#navodila figure {
+  position: relative;
+}
+#navodila figure figcaption {
+  position: relative;
+  margin-top: 500px;
+}
+#navodila figure img {
+  max-width: 90%;
   height: auto;
+  margin: 0 auto -20px;
+  clip-path: inset(0 0 20px 0);
+  position: absolute;
+  top: 0;
+  left: 18px;
+  margin-top: -500px;
 }
-#pricing.navodila h3 {
-  line-height: 1em;
-  display: block;
-  padding: 80px 0 0;
+
+#navodila figure.anim img:nth-child(1) {
+  animation: ayanim1 12s infinite;
+  -webkit-animation: ayanim1 12s infinite; /* Safari and Chrome */
+  opacity: 1;
 }
-#pricing.navodila .plan.p2 h3 {
+#navodila figure.anim img:nth-child(2) {
+  animation: ayanim2 12s infinite;
+  -webkit-animation: ayanim2 12s infinite; /* Safari and Chrome */
+  opacity: 0;
+}
+#navodila figure.anim img:nth-child(3) {
+  animation: ayanim3 12s infinite;
+  -webkit-animation: ayanim3 12s infinite; /* Safari and Chrome */
+  opacity: 0;
+}
+
+#navodila figure img.pravice {
+  clip-path: inset(0 0 100px 0);
+  margin-bottom: -100px;
+}
+#navodila figure img.domov {
+  clip-path: inset(57px 0 20px 0);
+  margin-top: -557px;
+  opacity: 1;
+}
+@keyframes ayanim1 {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ayanim2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  63% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ayanim3 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#navodila.navodila h3 {
+  line-height: 3em;
+}
+#navodila.navodila .plan.p2 h3 {
   padding: 65px 0 0;
 }
 /* ==========================================================================
@@ -870,7 +1001,7 @@ help
   color: #fff;
 }
 #about .legal li {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   line-height: 28px;
   margin: 0.2em 0;
@@ -883,25 +1014,6 @@ help
 }
 quote {
   padding: 1em 0;
-}
-.badges {
-  position: absolute;
-  top: 10px;
-  right: auto;
-  left: 10px;
-  bottom: auto;
-  width: 300px;
-  text-align: right;
-}
-.badges img {
-  opacity: 0.5;
-  transition: all 0.4s ease-in-out;
-}
-.badges a:hover img {
-  opacity: 1;
-}
-.video-js {
-  max-width: 100%;
 }
 
 /* ==========================================================================
@@ -977,6 +1089,13 @@ body#press .icon {
 /* ==========================================================================
 media quires for mobile
 ========================================================================== */
+@media (max-width: 970px) {
+  #feature {
+    padding-bottom: 640px;
+
+    /* background-position: right bottom; */
+  }
+}
 @media (max-width: 460px) {
   #home .splash {
     max-width: 200%;
@@ -992,7 +1111,8 @@ media quires for mobile
     font-size: 3em;
   }
   #feature {
-    padding: 0;
+    padding-bottom: 640px;
+    background-position: -100px bottom;
   }
   #contact .contact-address {
     text-align: left;
