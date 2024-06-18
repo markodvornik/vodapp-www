@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Redirect</title>
+    <script>
+      function redirectUser() {
+        var iosStoreLink =
+          "https://apps.apple.com/us/app/pitna-voda/id1150914088?ls=1";
+        var androidStoreLink =
+          "https://play.google.com/store/apps/details?id=si.vodapp.app";
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android/i.test(userAgent)) {
+          window.location.href = androidStoreLink;
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          window.location.href = iosStoreLink;
+        } else {
+          window.location.href = "https://www.vodapp.si/";
+        }
+      }
+      window.onload = redirectUser;
+    </script>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient(
+          to right bottom,
+          #67e8f9,
+          #a5f3fc,
+          #cffafe,
+          #fef9c3
+        );
+        min-height: 100vb;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/images/icon.svg" alt="Pitna voda" width="64" height="64" />
+    <p>Samo trenutek...</p>
+  </body>
+</html>
