@@ -876,93 +876,10 @@ footer.lite p {
 }
 
 /* ==========================================================================
-signup section
-========================================================================== */
-#signup {
-  background: #c1e6e8;
-  padding: 100px 0;
-  margin-top: 100px;
-}
-#signup .signup-address {
-  color: #ffffff;
-  position: relative;
-  top: 140px;
-}
-#signup .signup-address p {
-  line-height: 16px;
-}
-#signup .signup-email,
-#signup .signup-phone,
-#signup .signup-website {
-  padding: 100px;
-}
-#signup .signup-email {
-  background: #009988;
-}
-#signup .signup-phone {
-  background: #2b2b2b;
-}
-#signup .signup-website {
-  background: #aac1bf;
-}
-#signup h3 {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  padding-bottom: 12px;
-}
-#signup .medium-icon {
-  color: #ffffff;
-  font-size: 28px !important;
-}
-#signup .signup-info div {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-#signup .form-control::placeholder {
-  color: #001017;
-}
-
-#signup label {
-  margin: 0;
-}
-
-#signup .form-control {
-  background: none;
-  border-radius: 0;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: 2px solid #aac1bf;
-  box-shadow: none;
-  color: #001017;
-  margin-top: 0;
-  margin-bottom: 20px;
-  transition: all 0.4s ease-in;
-}
-#signup .form-control:focus {
-  border-bottom-color: #202020;
-  color: #202020;
-}
-#signup input {
-  height: 60px;
-}
-#signup input[type="submit"] {
-  border: 2px solid #aac1bf;
-  color: #2b2b2b;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-top: 18px;
-  background: #fff;
-}
-#signup input[type="submit"]:hover {
-  background: #82fdef;
-}
-
-/* ==========================================================================
 help
 ========================================================================== */
 #help {
+  background: #c1e6e8;
   padding: 100px 0;
 }
 #help h3 {
